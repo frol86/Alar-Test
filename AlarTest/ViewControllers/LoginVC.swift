@@ -24,7 +24,9 @@ class LoginVC: UIViewController {
         
         loginTextField.addTarget(self, action: #selector(onTextFieldEdit(_:)), for: .editingChanged)
         passwordTextField.addTarget(self, action: #selector(onTextFieldEdit(_:)), for: .editingChanged)
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         subscribe()
     }
     
