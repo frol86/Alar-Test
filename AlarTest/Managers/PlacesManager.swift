@@ -9,7 +9,6 @@ import Foundation
 
 class PlacesManager: ObservableObject {
     
-    var places: Places?
     @Published var placesArray: [Place]?
     
     let dataFetcher: DataFetcher
